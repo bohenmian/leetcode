@@ -26,5 +26,19 @@ public class Power {
             sum = 1.0 / sum;
         }
         return sum;
+
+        //另解,数学公式
+//        if (exponent == 0) {
+//            return 1;
+//        }
+//        if (exponent == 1) {
+//            return base;
+//        }
+//        double result = Power(base, exponent >> 1);
+//        result *= result;
+//        if ((exponent & 1) == 1) {
+//            result *= base;
+//        }
+//        return result;
     }
 }
