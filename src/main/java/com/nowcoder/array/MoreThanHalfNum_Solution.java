@@ -10,7 +10,7 @@ public class MoreThanHalfNum_Solution {
     public int MoreThanHalfNum_Solution(int [] array) {
         int times = 1;
         int number = array[0];
-        for (int i = 0; i < array.length; i++) {
+        for (int i = 1; i < array.length; i++) {
             if (array[i] == number) {
                 times++;
             } else {
