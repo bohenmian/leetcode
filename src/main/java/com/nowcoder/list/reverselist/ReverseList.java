@@ -1,7 +1,6 @@
 package com.nowcoder.list.reverselist;
 /**
- * question
- 输入一个链表，从尾到头打印链表每个节点的值。
+ * question输入一个链表，从尾到头打印链表每个节点的值。
  */
 
 import java.util.ArrayList;
