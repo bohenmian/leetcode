@@ -1,4 +1,4 @@
-package com.chinahadoop.list;
+package com.chinahadoop.list.twoListAdd;
 
 /**
  * 给定两个链表，分别表示两个非负整数。他们的数字逆序存储在链表中，且每个结点只存储一个数字，计算两个数的和，并且返回该链表
