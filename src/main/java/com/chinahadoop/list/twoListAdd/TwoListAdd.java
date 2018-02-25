@@ -8,6 +8,9 @@ package com.chinahadoop.list.twoListAdd;
 public class TwoListAdd {
 
     public static ListNode Add(ListNode pHead1, ListNode pHead2) {
+        if (pHead1.next == null || pHead2.next == null) {
+            return null;
+        }
         ListNode pSum = new ListNode(0);
         ListNode pTail = pSum;
         ListNode p1 = pHead1.next;

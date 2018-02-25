@@ -9,6 +9,12 @@ package com.chinahadoop.list.reverseList;
 public class ReverseList {
 
     public static void ReverseList(ListNode pHead, int from, int to) {
+        if (pHead == null || pHead.next == null) {
+            return;
+        }
+        if (to < from) {
+            throw new RuntimeException();
+        }
         ListNode pCur = pHead.next;
         int i;
         for (i = 0; i < from - 1; i++) {
