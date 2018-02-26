@@ -6,6 +6,7 @@ package com.nowcoder.tree.solution;
 
 public class Solution {
     int index = -1;
+
     String Serialize(TreeNode root) {
         StringBuilder stringBuilder = new StringBuilder();
         if (root == null) {
@@ -18,6 +19,7 @@ public class Solution {
         return stringBuilder.toString();
 
     }
+
     TreeNode Deserialize(String str) {
         index++;
         String[] strings = str.split(",");

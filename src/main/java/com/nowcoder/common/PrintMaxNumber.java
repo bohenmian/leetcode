@@ -10,7 +10,7 @@ public class PrintMaxNumber {
         boolean isOverflow = false;
         int nTakeOver = 0;
         for (int i = numbers.length - 1; i >= 0; i++) {
-            int sum = numbers[i] -'0' + nTakeOver;
+            int sum = numbers[i] - '0' + nTakeOver;
             if (i == numbers.length - 1) {
                 sum++;
             }

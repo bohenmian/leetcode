@@ -7,7 +7,7 @@ package com.nowcoder.array;
  */
 
 public class Duplicate {
-    public boolean duplicate(int numbers[], int length, int [] duplication) {
+    public boolean duplicate(int numbers[], int length, int[] duplication) {
         if (numbers == null || length < 0) {
             return false;
         }

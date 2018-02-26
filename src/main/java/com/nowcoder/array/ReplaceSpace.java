@@ -6,7 +6,7 @@ public class ReplaceSpace {
             return null;
         }
         int numberOfBlank = 0;
-        for (int i = 0 ; i < str.length() ; i++) {
+        for (int i = 0; i < str.length(); i++) {
             if (str.charAt(i) == ' ') {
                 numberOfBlank++;
             }
@@ -15,7 +15,7 @@ public class ReplaceSpace {
         int indexOfOriginal = str.length() - 1;
         int indexOfNew = newLength - 1;
         str.setLength(newLength);
-        for (; indexOfOriginal >= 0 && indexOfOriginal < indexOfNew ; --indexOfOriginal ) {
+        for (; indexOfOriginal >= 0 && indexOfOriginal < indexOfNew; --indexOfOriginal) {
             if (str.charAt(indexOfOriginal) == ' ') {
                 str.setCharAt(indexOfNew--, '0');
                 str.setCharAt(indexOfNew--, '2');

@@ -23,7 +23,7 @@ public class HasPath {
         return false;
     }
 
-    public boolean findPath(char[] matrix, int rows, int cols , int row, int col, char[] str, int curr, boolean [] visit) {
+    public boolean findPath(char[] matrix, int rows, int cols, int row, int col, char[] str, int curr, boolean[] visit) {
         int index = row * cols + col;
         if (row < 0 || row >= rows || col < 0 || col >= cols || matrix[index] != str[curr] || visit[index]) {
             return false;

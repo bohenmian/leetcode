@@ -10,6 +10,7 @@ public class FindPath {
 
     private ArrayList<ArrayList<Integer>> listAll = new ArrayList<ArrayList<Integer>>();
     private ArrayList<Integer> list = new ArrayList<>();
+
     public ArrayList<ArrayList<Integer>> FindPath(TreeNode root, int target) {
 
         if (root == null || root.val > target) {

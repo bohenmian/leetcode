@@ -19,9 +19,9 @@ public class ReOrderArray {
             while (i < j && (array[j] & 1) == 0) {
                 j--;
             }
-                int temp = array[i];
-                array[i] = array[j];
-                array[j] = temp;
+            int temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
         }
         return array;
     }

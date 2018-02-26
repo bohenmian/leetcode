@@ -7,7 +7,7 @@ package com.nowcoder.array;
 
 
 public class MoreThanHalfNum_Solution {
-    public int MoreThanHalfNum_Solution(int [] array) {
+    public int MoreThanHalfNum_Solution(int[] array) {
         int times = 1;
         int number = array[0];
         for (int i = 1; i < array.length; i++) {

@@ -19,11 +19,10 @@ public class MinNumberInRotateArray {
                 mid = index2;
                 break;
             }
-            mid = (index1 + index2)/2;
+            mid = (index1 + index2) / 2;
             if (array[index1] == array[index2] && array[mid] == array[index1]) {
                 return MinInOrder(array, index1, index2);
-            } else
-            if (array[mid] >= array[index1]) {
+            } else if (array[mid] >= array[index1]) {
                 index1 = mid;
             } else if (array[mid] <= array[index2]) {
                 index2 = mid;

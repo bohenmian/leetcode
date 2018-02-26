@@ -11,7 +11,7 @@ public class FindKthToTail {
         }
         ListNode pAhead = head;
         ListNode pBehind = null;
-        for (int i = 0; i < k -1; i++) {
+        for (int i = 0; i < k - 1; i++) {
             if (pAhead.next != null) {
                 pAhead = pAhead.next;
             } else {

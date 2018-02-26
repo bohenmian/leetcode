@@ -14,7 +14,7 @@ public class PrintMatrix {
         while (cols > start * 2 && rows > start * 2) {
             int endX = cols - 1 - start;
             int endY = rows - 1 - start;
-            for (int i = start ; i<=endX;i++) {
+            for (int i = start; i <= endX; i++) {
                 list.add(matrix[start][i]);
             }
             if (start < endY) {
@@ -23,7 +23,7 @@ public class PrintMatrix {
                 }
             }
             if (start < endX && start < endY) {
-                for (int i = endX - 1; i>= start;i--) {
+                for (int i = endX - 1; i >= start; i--) {
                     list.add(matrix[endY][i]);
                 }
             }

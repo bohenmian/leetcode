@@ -10,6 +10,7 @@ import java.util.Queue;
 
 public class Print {
     ArrayList<ArrayList<Integer>> lists = new ArrayList<>();
+
     ArrayList<ArrayList<Integer>> Print(TreeNode pRoot) {
         if (pRoot == null) {
             return lists;

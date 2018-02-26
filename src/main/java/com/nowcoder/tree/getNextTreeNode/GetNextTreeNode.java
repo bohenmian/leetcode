@@ -19,8 +19,7 @@ class TreeLinkNode {
 
 public class GetNextTreeNode {
 
-    public TreeLinkNode GetNext(TreeLinkNode pNode)
-    {
+    public TreeLinkNode GetNext(TreeLinkNode pNode) {
         if (pNode == null) {
             return null;
         }
