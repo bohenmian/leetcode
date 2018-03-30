@@ -9,7 +9,7 @@ public class QuickSort {
         }
         int i = start;
         int j = end;
-        int pivot = array[(start + end) / 2];
+        int pivot = array[(start + end) >>> 1];
         while (i <= j) {
             while (array[i] < pivot) {
                 ++i;
