@@ -1,4 +1,4 @@
-package com.javaPlus.sort;
+package com.javaPlus.dataStructure.sort;
 
 public class QuickSort {
 
