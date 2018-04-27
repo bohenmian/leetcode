@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.net.Socket;
 
+/**
+ * BIO Client Demo
+ */
 public class Client {
 
     private static final int PORT = 8080;

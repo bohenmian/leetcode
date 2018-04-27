@@ -10,6 +10,10 @@ import java.nio.channels.SocketChannel;
 import java.nio.charset.Charset;
 import java.util.Iterator;
 
+
+/**
+ * NIO Server Demo
+ */
 public class NIOServer {
 
     public static void main(String[] args) throws IOException {

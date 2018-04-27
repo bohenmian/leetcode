@@ -7,6 +7,9 @@ import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.Socket;
 
+/**
+ * NIO Client Demo
+ */
 public class NIOClient {
 
     public static void main(String[] args) throws IOException {

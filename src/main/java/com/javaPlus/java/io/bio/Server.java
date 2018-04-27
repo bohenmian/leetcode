@@ -6,6 +6,9 @@ import java.io.InputStreamReader;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * BIO Server Demo
+ */
 public class Server {
 
     private static final int PORT = 8080;
