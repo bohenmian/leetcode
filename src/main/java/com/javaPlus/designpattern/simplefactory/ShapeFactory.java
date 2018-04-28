@@ -7,6 +7,7 @@ public class ShapeFactory {
         if (shapeType == null) {
             return null;
         }
+        //单一职责原则,一个类只提供一种功能
         if (shapeType.equals("RECTANGLE")) {
             return new Rectangle();
         } else if (shapeType.equals("SQUARE")) {
