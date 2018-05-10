@@ -35,8 +35,4 @@ public class LeftRotateString {
             s[to--] = temp;
         }
     }
-
-    public static void main(String[] args) {
-        System.out.println(Math.floor(-11.5));
-    }
 }
