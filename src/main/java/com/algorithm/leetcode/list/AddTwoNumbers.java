@@ -1,6 +1,6 @@
 package com.algorithm.leetcode.list;
 
-public class addTwoNumbers {
+public class AddTwoNumbers {
 
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode pSum = new ListNode(0);
