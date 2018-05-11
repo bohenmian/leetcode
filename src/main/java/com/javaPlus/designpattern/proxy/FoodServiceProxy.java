@@ -11,13 +11,11 @@ public class FoodServiceProxy implements FoodService {
     //代理类不实现具体逻辑,代理类中具体逻辑仍然是用被代理类来实现
     @Override
     public Food makeChicken() {
-        Food food = foodService.makeChicken();
-        return food;
+        return foodService.makeChicken();
     }
 
     @Override
     public Food makeNoodle() {
-        Food food = foodService.makeNoodle();
-        return food;
+        return foodService.makeNoodle();
     }
 }

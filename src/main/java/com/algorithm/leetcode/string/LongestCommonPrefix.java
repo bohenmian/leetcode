@@ -2,6 +2,7 @@ package com.algorithm.leetcode.string;
 
 /**
  * Write a function to find the longest common prefix string amongst an array of strings.
+ * 查找一组字符串的最小前缀
  */
 
 public class LongestCommonPrefix {

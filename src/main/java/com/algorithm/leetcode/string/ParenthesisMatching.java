@@ -28,7 +28,6 @@ public class ParenthesisMatching {
     public static void main(String[] args) {
         String s = "(())";
         Permutation(s.toCharArray(), 0, s.length() - 1);
-        //TODO去重
 
     }
 
