@@ -1,4 +1,4 @@
-package com.algorithm.leetcode.list;
+package com.algorithm.leetcode.common;
 
 /**
  * 删除数组中重复的元素,要求时间复杂度O(n),空间复杂度O(1)
@@ -6,7 +6,7 @@ package com.algorithm.leetcode.list;
 
 public class RemoveDuplicates {
 
-    public static int removeDuplicates(int[] nums) {
+    public int removeDuplicates(int[] nums) {
         if (nums.length == 0) {
             return 0;
         }
