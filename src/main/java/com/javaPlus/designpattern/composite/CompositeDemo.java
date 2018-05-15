@@ -2,6 +2,7 @@ package com.javaPlus.designpattern.composite;
 
 /**
  * 结构型模式,组合型模式是一种层次的属性结构,如打印老板的高级经理及高级经理下的职员
+ * 优点: 优化处理递归和分级数据结构
  */
 
 public class CompositeDemo {

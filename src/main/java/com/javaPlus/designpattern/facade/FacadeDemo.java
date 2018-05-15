@@ -1,5 +1,9 @@
 package com.javaPlus.designpattern.facade;
 
+/**
+ * 外观模式的好处: 屏蔽调用子系统组件,让客户端看不到系统的具体实现,降低了客户端和子系统之间的耦合
+ */
+
 public class FacadeDemo {
 
     public static void main(String[] args) {
