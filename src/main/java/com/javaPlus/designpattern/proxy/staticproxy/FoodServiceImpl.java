@@ -1,4 +1,4 @@
-package com.javaPlus.designpattern.proxy;
+package com.javaPlus.designpattern.proxy.staticproxy;
 
 //委托类(被代理类)
 public class FoodServiceImpl implements FoodService {

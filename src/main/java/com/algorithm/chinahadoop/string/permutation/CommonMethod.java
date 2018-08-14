@@ -43,10 +43,10 @@ public class CommonMethod {
     }
 
     public static void main(String[] args) {
-        String s = "12345";
+        String s = "aazz";
         char[] chars = s.toCharArray();
         System.out.println(chars);
-        while (Permutation(chars, 5)) {
+        while (Permutation(chars, chars.length)) {
             System.out.println(String.valueOf(chars));
         }
     }

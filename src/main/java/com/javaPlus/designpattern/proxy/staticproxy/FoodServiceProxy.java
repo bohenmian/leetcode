@@ -1,4 +1,4 @@
-package com.javaPlus.designpattern.proxy;
+package com.javaPlus.designpattern.proxy.staticproxy;
 
 /**
  * 代理类,一般静态代理时,代理类和委托类要实现一个共同的接口或者继承一个类

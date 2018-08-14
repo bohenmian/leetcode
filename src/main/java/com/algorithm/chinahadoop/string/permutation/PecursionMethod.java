@@ -27,7 +27,7 @@ public class PecursionMethod {
     }
 
     public static void main(String[] args) {
-        String s = "12345";
+        String s = "aazz";
         Permutation(s.toCharArray(), 0, s.length() - 1);
     }
 }

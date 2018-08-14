@@ -1,4 +1,4 @@
-package com.javaPlus.designpattern.proxy;
+package com.javaPlus.designpattern.proxy.staticproxy;
 
 public interface FoodService {
 
