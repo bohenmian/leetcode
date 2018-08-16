@@ -10,9 +10,11 @@ public class Main {
     public static void main(String[] args) throws IOException {
 
         People target = (People) new ProxyHandler().getInstance(new Man());
-        target.execute();
 
         System.out.println(target.getClass().getName());
+
+        target.execute();
+
 
         //生成代理对象的字节码
         byte[] bytes = ProxyGenerator.generateProxyClass("$Proxy0", new Class[]{People.class});

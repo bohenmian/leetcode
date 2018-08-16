@@ -1,18 +1,15 @@
-package com.javaPlus.designpattern.proxy.jdkproxy;
+package com.javaPlus.java.proxy.jdk;
 
-import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 
-public class ProxyHandler implements InvocationHandler {
+public class ProxyHandler implements MyInvocationHandler {
 
     private People target = null;
 
-    //获取代理对象
     public Object getInstance(People target) {
         this.target = target;
         Class clazz = target.getClass();
-        return Proxy.newProxyInstance(clazz.getClassLoader(), clazz.getInterfaces(), this);
+        return MyProxy.newProxyInstance(new MyClassLoader(), clazz.getInterfaces(), this);
     }
 
     @Override
