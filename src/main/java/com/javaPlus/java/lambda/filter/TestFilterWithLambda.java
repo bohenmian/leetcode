@@ -5,6 +5,7 @@ import com.javaPlus.java.lambda.sort.Developer;
 import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -32,12 +33,20 @@ public class TestFilterWithLambda {
                 .orElse(null);
         System.out.println(word);
 
+        // 手机用filter和map对对象做过滤和转换
         List<String> words = getDevelopers().stream()
                 .filter(developer1 -> !developer1.getName().equals("tom"))
                 .map(Developer::getName)
                 .collect(Collectors.toList());
 
         words.forEach(System.out::println);
+
+        // 过滤数组中的null值
+        List<String> result = Stream.of("java", "python", "node", null, "ruby", null, "php")
+                .filter(Objects::nonNull)
+                .collect(Collectors.toList());
+
+        result.forEach(System.out::println);
     }
 
     private static List<Developer> getDevelopers() {
