@@ -4,7 +4,7 @@ import java.lang.reflect.Method;
 
 public class ProxyHandler implements MyInvocationHandler {
 
-    private People target = null;
+    private People target;
 
     public Object getInstance(People target) {
         this.target = target;

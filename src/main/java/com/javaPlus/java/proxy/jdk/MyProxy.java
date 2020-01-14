@@ -24,7 +24,6 @@ public class MyProxy {
             //1. 生成源代码
             String proxySrc = generateSrc(interfaces[0]);
             //2. 将生成的源代码保存为.java文件
-
             //3. 编译源代码,生成.class文件
             String filePath = MyProxy.class.getResource("").getPath();
             File file = new File(filePath + "$Proxy0.java");

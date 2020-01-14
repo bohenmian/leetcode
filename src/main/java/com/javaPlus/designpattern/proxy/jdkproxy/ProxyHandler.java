@@ -6,7 +6,7 @@ import java.lang.reflect.Proxy;
 
 public class ProxyHandler implements InvocationHandler {
 
-    private People target = null;
+    private People target;
 
     //获取代理对象
     public Object getInstance(People target) {
