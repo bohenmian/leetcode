@@ -1,4 +1,4 @@
-package com.algorithm.chinahadoop.string.lcs;
+package com.leetcode.string.lcs;
 
 /**
  * 两个序列X和Y的公共子序列中,长度最长的那个,定义为X和Y的最长公共子序列

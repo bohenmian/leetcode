@@ -1,4 +1,4 @@
-package com.algorithm.nowcoder.array;
+package com.leetcode.array;
 
 /**
  * question
@@ -6,26 +6,28 @@ package com.algorithm.nowcoder.array;
  * 例如，如果输入长度为7的数组{2,3,1,0,2,5,3}，那么对应的输出是第一个重复的数字2。
  */
 
-public class Duplicate {
-    public boolean duplicate(int numbers[], int length, int[] duplication) {
+public class DuplicateNumber {
+    public boolean duplicate(int[] numbers, int length) {
         if (numbers == null || length < 0) {
             return false;
         }
+
         for (int i = 0; i < length; i++) {
-            if (numbers[i] < 0 || numbers[i] > length - 1) {
+            if (numbers[i] > length - 1 || numbers[i] < 0) {
                 return false;
             }
         }
+
         for (int i = 0; i < length; i++) {
             while (numbers[i] != i) {
                 if (numbers[i] == numbers[numbers[i]]) {
-                    duplication[0] = numbers[i];
                     return true;
                 }
                 int temp = numbers[i];
                 numbers[i] = numbers[temp];
                 numbers[temp] = temp;
             }
+
         }
         return false;
     }

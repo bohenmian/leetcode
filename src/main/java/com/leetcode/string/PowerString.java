@@ -1,4 +1,4 @@
-package com.algorithm.chinahadoop.string;
+package com.leetcode.string;
 
 /**
  * 给定一个长度为n的字符串S,如果存在一个字符串T,重复若干次T能够得到S,那么,S叫做周期串,T叫做S的一个周期。

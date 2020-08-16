@@ -1,13 +1,12 @@
 package com.leetcode.array;
 
 import org.junit.Test;
-
 import static org.junit.Assert.assertArrayEquals;
 
 
 public class TwoSumTest {
 
-    private TwoSum twoSum = new TwoSum();
+    private final TwoSum twoSum = new TwoSum();
 
     @Test
     public void should_return_the_index_of_two_number_sum_equal_target() {

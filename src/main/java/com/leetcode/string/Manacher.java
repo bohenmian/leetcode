@@ -1,4 +1,4 @@
-package com.algorithm.chinahadoop.string;
+package com.leetcode.string;
 
 /**
  * 给定字符串str,若子串s是回文串,称s为str的回文子串,求回文子串的最大长度

@@ -1,4 +1,4 @@
-package com.algorithm.chinahadoop.string;
+package com.leetcode.string;
 
 /**
  * 给定一个字符串S[0...N-1],要求把S的前k个字符移动到S的尾部，如把字符串"abcdef"前面的2个字符移动到字符串的尾部,得到新字符串"cdefab"

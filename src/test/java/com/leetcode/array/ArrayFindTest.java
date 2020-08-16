@@ -1,4 +1,4 @@
-package com.algorithm.nowcoder.array;
+package com.leetcode.array;
 
 import org.junit.Test;
 
@@ -9,7 +9,7 @@ public class ArrayFindTest {
     private ArrayFind arrayFind = new ArrayFind();
 
     @Test
-    public void test_find_when_number_exit() throws Exception {
+    public void test_find_when_number_exit() {
         int[][] array = {
                 {1, 2, 3},
                 {4, 5, 6}
@@ -20,7 +20,7 @@ public class ArrayFindTest {
     }
 
     @Test
-    public void test_find_when_number_not_exit() throws Exception {
+    public void test_find_when_number_not_exit() {
         int[][] array = {
                 {1, 2, 3},
                 {4, 5, 6}

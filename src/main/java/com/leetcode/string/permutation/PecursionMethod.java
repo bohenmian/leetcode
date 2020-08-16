@@ -1,4 +1,4 @@
-package com.algorithm.chinahadoop.string.permutation;
+package com.leetcode.string.permutation;
 
 /**
  * 对一个字符串进行全排列

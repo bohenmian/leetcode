@@ -1,4 +1,4 @@
-package com.algorithm.nowcoder.array;
+package com.leetcode.array;
 
 /**
  * question:
@@ -8,13 +8,13 @@ package com.algorithm.nowcoder.array;
 
 public class ArrayFind {
     public boolean find(int target, int[][] array) {
+        int rows = array.length;
+        int cols = array[0].length - 1;
         int row = 0;
-        int col = array[0].length - 1;
-        int numRow = array.length;
-        while (row < numRow && col > 0) {
-            if (array[row][col] > target) {
-                col--;
-            } else if (array[row][col] < target) {
+        while (row < rows && cols >= 0) {
+            if (array[row][cols] > target) {
+                cols--;
+            } else if (array[row][cols] < target) {
                 row++;
             } else {
                 return true;
