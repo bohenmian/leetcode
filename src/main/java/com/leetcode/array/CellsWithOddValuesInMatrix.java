@@ -14,9 +14,8 @@ public class CellsWithOddValuesInMatrix {
                 oddMatrix[row][ind[1]]++;
             }
         }
-        return (int) Arrays.stream(oddMatrix)
-                .flatMapToInt(Arrays::stream)
-                .filter(value -> value % 2 == 1)
+        return (int) Arrays.stream(oddMatrix).flatMapToInt(Arrays::stream)
+                .filter(i -> i % 2 != 0)
                 .count();
     }
 
@@ -35,5 +34,33 @@ public class CellsWithOddValuesInMatrix {
             }
         }
         return result;
+    }
+
+    public int oddCellsInOtherWay(int n, int m, int[][] indices) {
+        boolean[] col = new boolean[n];
+        boolean[] row = new boolean[m];
+        for (int[] ind : indices) {
+            col[ind[0]] ^= true;
+            row[ind[1]] ^= true;
+        }
+        int rowEven = 0;
+        int colEven = 0;
+        int rowOdd = 0;
+        int colOdd = 0;
+        for (int i = 0; i < m; i++) {
+            if (row[i]) {
+                rowOdd++;
+            } else {
+                rowEven++;
+            }
+        }
+        for (int i = 0; i < m; i++) {
+            if (col[i]) {
+                colOdd++;
+            } else {
+                colEven++;
+            }
+        }
+        return rowEven * colOdd + rowOdd * colEven;
     }
 }

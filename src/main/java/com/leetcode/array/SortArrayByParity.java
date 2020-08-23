@@ -23,14 +23,34 @@ public class SortArrayByParity {
 
     public int[] sortArrayByParityInOtherWay(int[] A) {
         int[] result = new int[A.length];
-        int i = 0, j = A.length - 1;
+        int start = 0;
+        int end = A.length - 1;
         for (int value : A) {
-            if (value % 2 != 0) {
-                result[j--] = value;
+            if ((value & 1) == 1) {
+                result[end--] = value;
             } else {
-                result[i++] = value;
+                result[start++] = value;
             }
         }
         return result;
     }
+
+    public int[] sortArrayByParityInOtherWays(int[] A) {
+        int start = 0;
+        int end = A.length - 1;
+        while (start < end) {
+            if ((A[start] & 1) == 1 && (A[end] & 1) != 1) {
+                int temp = A[start];
+                A[start] = A[end];
+                A[end] = temp;
+            } else if ((A[start] & 1) != 1) {
+                start++;
+            } else if ((A[end] & 1) == 1) {
+                end--;
+            }
+        }
+        return A;
+    }
+
+
 }

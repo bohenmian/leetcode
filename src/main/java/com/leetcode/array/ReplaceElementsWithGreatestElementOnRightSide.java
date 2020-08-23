@@ -16,14 +16,14 @@ public class ReplaceElementsWithGreatestElementOnRightSide {
     }
 
     public int[] replaceElementsInOtherWay(int[] arr) {
-        int right = -1;
-        for (int i = arr.length - 1; i >= 0; i--) {
-            int temp = arr[i];
-            arr[i] = right;
-            if (temp > right) {
-                right = temp;
+            int rightOfMax = -1;
+            for (int i = arr.length - 1; i >= 0; i--) {
+                int temp = arr[i];
+                arr[i] = rightOfMax;
+                if (temp > rightOfMax) {
+                    rightOfMax = temp;
+                }
             }
-        }
-        return arr;
+            return arr;
     }
 }

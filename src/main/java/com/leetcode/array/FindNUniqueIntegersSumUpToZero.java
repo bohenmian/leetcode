@@ -24,4 +24,14 @@ public class FindNUniqueIntegersSumUpToZero {
         }
         return result;
     }
+
+    public int[] sumZeroOtherWays(int n) {
+        int[] result = new int[n];
+        int count = n / 2;
+        for (int i = 0; i < count * 2; i += 2) {
+            result[i] = -i - 1;
+            result[i + 1] = i + 1;
+        }
+        return result;
+    }
 }
