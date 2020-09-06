@@ -12,7 +12,7 @@ public class BusyStudentTest {
         int[] startTime = new int[]{1, 2, 3};
         int[] endTime = new int[]{3, 2, 7};
         int queryTime = 4;
-        int student = busyStudent.busyStudent(startTime, endTime, queryTime);
-        assertEquals(1, student);
+        int result = busyStudent.busyStudent(startTime, endTime, queryTime);
+        assertEquals(1, result);
     }
 }

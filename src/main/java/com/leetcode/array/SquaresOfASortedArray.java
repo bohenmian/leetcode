@@ -14,18 +14,21 @@ public class SquaresOfASortedArray {
     }
 
     public int[] sortedSquaresInOtherWay(int[] A) {
-        int n = A.length;
-        int[] result = new int[n];
-        int i = 0, k = n - 1, j = n - 1;
-        while (i <= j) {
-            if (Math.abs(A[i]) > Math.abs(A[j])) {
-                result[k] = A[i] * A[i];
-                i++;
+        int[] result = new int[A.length];
+        int start = 0;
+        int end = A.length - 1;
+        int newEnd = A.length - 1;
+        while (start <= end) {
+            int startSquare = A[start] * A[start];
+            int endSquare = A[end] * A[end];
+            if (startSquare > endSquare) {
+                result[newEnd] = startSquare;
+                start++;
             } else {
-                result[k] = A[j] * A[j];
-                j--;
+                result[newEnd] = endSquare;
+                end--;
             }
-            k--;
+            newEnd--;
         }
         return result;
     }

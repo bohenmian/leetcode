@@ -5,7 +5,7 @@ import static org.junit.Assert.assertEquals;
 
 public class XorOperationTest {
 
-    private XorOperation operation = new XorOperation();
+    private final XorOperation operation = new XorOperation();
 
     @Test
     public void should_return_the_operation() {

@@ -18,4 +18,13 @@ public class ArrayPartition {
         }
         return result;
     }
+
+    public int arrayPairSumInOtherWay(int[] sum) {
+        int result = 0;
+        Arrays.sort(sum);
+        for (int i = 0; i < sum.length; i = i + 2) {
+            result += sum[i];
+        }
+        return result;
+    }
 }

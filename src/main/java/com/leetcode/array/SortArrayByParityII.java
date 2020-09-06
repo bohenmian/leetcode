@@ -9,9 +9,9 @@ public class SortArrayByParityII {
                 while ((A[j] & 1) == 1) {
                     j += 2;
                 }
-                int temp = A[i];
-                A[i] = A[j];
-                A[j] = temp;
+                int temp = A[j];
+                A[j] = A[i];
+                A[i] = temp;
             }
         }
         return A;

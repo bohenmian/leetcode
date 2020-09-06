@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class ArrayFindTest {
 
-    private ArrayFind arrayFind = new ArrayFind();
+    private final ArrayFind arrayFind = new ArrayFind();
 
     @Test
     public void test_find_when_number_exit() {

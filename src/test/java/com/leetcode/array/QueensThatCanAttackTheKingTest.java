@@ -4,11 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 public class QueensThatCanAttackTheKingTest {
 
-    private QueensThatCanAttackTheKing attackTheKing = new QueensThatCanAttackTheKing();
+    private final QueensThatCanAttackTheKing attackTheKing = new QueensThatCanAttackTheKing();
 
     @Test
     public void should_return_the_coordinates_of_all_the_queens_that_can_attack_the_king() {

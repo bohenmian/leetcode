@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class MinTimeToVisitAllPointsTest {
 
-    private MinTimeToVisitAllPoints time = new MinTimeToVisitAllPoints();
+    private final MinTimeToVisitAllPoints time = new MinTimeToVisitAllPoints();
 
     @Test
     public void minTimeToVisitAllPoints() {

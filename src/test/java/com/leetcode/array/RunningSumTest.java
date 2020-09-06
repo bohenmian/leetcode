@@ -11,7 +11,8 @@ public class RunningSumTest {
     @Test
     public void should_return_the_new_running_sum() {
         int[] numbers = {1, 2, 3, 4};
-        int[] sum = this.sum.runningSum(numbers);
-        assertArrayEquals(new int[]{1, 3, 6, 10}, sum);
+        int[] result = this.sum.runningSum(numbers);
+        int[] expected = {1, 3, 6, 10};
+        assertArrayEquals(expected, result);
     }
 }

@@ -10,7 +10,7 @@ public class MaxProductTest {
     @Test
     public void should_return_the_max_product() {
         int[] nums = new int[]{1, 5, 4, 5};
-        int maxProduct = product.maxProduct(nums);
-        assertEquals(16, maxProduct);
+        int result = product.maxProduct(nums);
+        assertEquals(16, result);
     }
 }

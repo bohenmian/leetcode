@@ -6,7 +6,7 @@ import static org.junit.Assert.assertTrue;
 public class DuplicateNumberTest {
 
 
-    private DuplicateNumber duplicateNumber = new DuplicateNumber();
+    private final DuplicateNumber duplicateNumber = new DuplicateNumber();
 
     @Test
     public void should_return_true_when_array_contain_duplicate_number() {

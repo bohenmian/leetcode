@@ -6,7 +6,7 @@ import static org.junit.Assert.*;
 
 public class FindNumbersWithEvenNumberOfDigitsTest {
 
-    private FindNumbersWithEvenNumberOfDigits test = new FindNumbersWithEvenNumberOfDigits();
+    private final FindNumbersWithEvenNumberOfDigits test = new FindNumbersWithEvenNumberOfDigits();
 
     @Test
     public void should_return_the_even_number_of_digits() {

@@ -5,7 +5,7 @@ import static org.junit.Assert.*;
 
 public class FourSliceTest {
 
-    private FourSlice fourSlice = new FourSlice();
+    private final FourSlice fourSlice = new FourSlice();
 
     @Test
     public void should_return_true_when_four_slice() {
