@@ -9,7 +9,7 @@ public class FourSliceTest {
 
     @Test
     public void should_return_true_when_four_slice() {
-        int[] numbers = new int[]{2, 3, 5, 1, 2, 2, 1, 1, 3};
+        int[] numbers = new int[]{2, 3, 5, 1, 2, 2, 1, 1, 3, 0};
         boolean result = fourSlice.resolve(numbers);
         assertTrue(result);
     }

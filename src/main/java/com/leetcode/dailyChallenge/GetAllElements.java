@@ -3,19 +3,6 @@ package com.leetcode.dailyChallenge;
 import java.util.ArrayList;
 import java.util.List;
 
-class TreeNode {
-    int val;
-    TreeNode left;
-    TreeNode right;
-
-    TreeNode(int val, TreeNode left, TreeNode right) {
-        this.val = val;
-        this.left = left;
-        this.right = right;
-    }
-}
-
-
 public class GetAllElements {
 
     public List<Integer> getAllElements(TreeNode root1, TreeNode root2) {
