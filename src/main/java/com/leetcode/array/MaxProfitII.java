@@ -1,6 +1,6 @@
 package com.leetcode.array;
 
-public class maxProfitII {
+public class MaxProfitII {
 
     public int maxProfit(int[] prices) {
         int maxProfit = 0;

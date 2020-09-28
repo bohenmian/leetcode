@@ -32,6 +32,8 @@ public class FindTheDistanceValue {
             else if (arr[mid] > value) end = mid - 1;
             else return mid;
         }
+        // find the array index of value close to value
+        // edge case will return index 0 and arr2.length + 1
         return start;
     }
 
