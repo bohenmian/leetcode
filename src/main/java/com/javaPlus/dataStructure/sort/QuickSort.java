@@ -63,9 +63,29 @@ public class QuickSort {
 
     public static void main(String[] args) {
         int[] arr = new int[]{1, 4, 8, 2, 55, 3, 4, 8, 6, 4, 0, 11, 34, 90, 23, 54, 77, 9, 2, 9, 4, 10};
-        quickSort(arr, 0, arr.length - 1);
-        for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+        quickSortOtherWay(arr, 0, arr.length - 1);
+        for (int j : arr) {
+            System.out.println(j);
         }
+    }
+
+    public static void quickSortOtherWay(int[] arr, int start, int end) {
+        if (start >= end) return;
+        int low = start - 1;
+        int high = end + 1;
+        int mid = arr[start + ((end - start) >> 1)];
+        while (low < high) {
+            while (arr[++low] < mid);
+            while (arr[--high] > mid);
+
+            if (low < high) {
+                int temp = arr[low];
+                arr[low] = arr[high];
+                arr[high] = temp;
+            }
+        }
+
+        quickSortOtherWay(arr, start, high);
+        quickSortOtherWay(arr, high + 1, end);
     }
 }

@@ -24,7 +24,7 @@ public class Solution3 {
         }
         int left = depth(root.left);
         int right = depth(root.right);
-        return (left > right ? left : right) + 1;
+        return (Math.max(left, right)) + 1;
     }
 }
 
